@@ -19,7 +19,7 @@ html, body {
   touch-action: manipulation;
 }
 
-/* âââ HEADER âââ */
+/* ─── HEADER ─── */
 .header {
   background: linear-gradient(180deg, #12121a, #0e0e16);
   padding: 8px 12px;
@@ -37,7 +37,7 @@ html, body {
 .price-block .price { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; transition: color 0.2s; }
 .price-block .sym { font-size: 10px; color: #666; }
 
-/* âââ SYMBOL BAR âââ */
+/* ─── SYMBOL BAR ─── */
 .sym-bar {
   background: #0a0a0f; padding: 6px 12px;
   display: flex; gap: 6px; overflow-x: auto;
@@ -54,7 +54,7 @@ html, body {
 .sym-btn.active { background: #0077b6; color: #fff; border-color: #00b4d8; }
 .sym-btn:active { transform: scale(0.93); }
 
-/* âââ SEARCH BAR âââ */
+/* ─── SEARCH BAR ─── */
 .search-bar {
   background: #0a0a0f; padding: 6px 12px;
   display: flex; gap: 6px; align-items: center;
@@ -93,7 +93,7 @@ html, body {
 .search-item .price-sm { font-size: 12px; color: #888; font-variant-numeric: tabular-nums; }
 .search-no-result { padding: 12px; text-align: center; font-size: 12px; color: #444; }
 
-/* âââ PULLBACK ALERT âââ */
+/* ─── PULLBACK ALERT ─── */
 .alert-box {
   margin: 6px 10px; padding: 10px; border-radius: 10px;
   font-size: 12px; font-weight: 600; text-align: center;
@@ -106,7 +106,7 @@ html, body {
 .alert-box.strong-dn { background: rgba(220,50,50,0.1); border: 1px solid rgba(220,50,50,0.3); color: #dc3232; }
 .alert-box.deep-pb { background: rgba(255,100,0,0.1); border: 1px solid rgba(255,100,0,0.3); color: #ff6400; }
 
-/* âââ ENTRY SIGNAL âââ */
+/* ─── ENTRY SIGNAL ─── */
 .signal-card {
   margin: 6px 10px; padding: 14px; border-radius: 14px;
   text-align: center; transition: all 0.3s;
@@ -124,7 +124,7 @@ html, body {
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
 .signal-pulse { animation: pulse 1.5s ease-in-out infinite; }
 
-/* âââ RSI GRID âââ */
+/* ─── RSI GRID ─── */
 .sec-label { padding: 8px 12px 4px; font-size: 10px; color: #444; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
 .rsi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 4px 10px; }
 .rsi-card {
@@ -142,7 +142,7 @@ html, body {
 .rsi-bar { height: 3px; background: #1a1a2a; border-radius: 2px; margin-top: 6px; overflow: hidden; }
 .rsi-bar-fill { height: 100%; border-radius: 2px; transition: width 0.5s; }
 
-/* âââ PROBABILITY âââ */
+/* ─── PROBABILITY ─── */
 .prob-card {
   margin: 6px 10px; background: #12121a; border-radius: 12px;
   padding: 10px; border: 1px solid #1e1e2a;
@@ -154,7 +154,7 @@ html, body {
 .prob-fill { height: 100%; border-radius: 10px; transition: all 0.5s; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; }
 .prob-labels { display: flex; justify-content: space-between; font-size: 9px; color: #444; margin-top: 3px; }
 
-/* âââ KARAR MERKEZÄ° âââ */
+/* ─── KARAR MERKEZİ ─── */
 .km-card {
   margin: 6px 10px; background: #12121a; border-radius: 12px;
   border: 1px solid #1e1e2a; overflow: hidden;
@@ -165,329 +165,422 @@ html, body {
 .km-row .lbl { font-size: 11px; color: #555; font-weight: 600; }
 .km-row .val { font-size: 12px; font-weight: 700; }
 
-/* âââ VOLUME âââ */
+/* ─── VOLUME ─── */
 .vol-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 4px 10px; }
 .vol-card { background: #12121a; border-radius: 10px; padding: 8px; text-align: center; border: 1px solid #1e1e2a; }
 .vol-card .lbl { font-size: 9px; color: #555; font-weight: 700; text-transform: uppercase; }
 .vol-card .val { font-size: 18px; font-weight: 800; margin-top: 2px; }
 
-/* âââ STATUS âââ */
+/* ─── STATUS ─── */
 .status { padding: 8px; text-align: center; font-size: 9px; color: #333; }
 .status .live { color: #00c864; }
 .status .err { color: #dc3232; }
 
-/* âââ LOADING âââ */
+/* ─── LOADING ─── */
 .loading { text-align: center; padding: 60px 20px; }
 .spinner { width: 28px; height: 28px; border: 3px solid #1a1a2a; border-top-color: #00e5ff; border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 12px; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .loading-txt { color: #444; font-size: 12px; }
 
-/* âââ VIBRATION FEEDBACK (on signal change) âââ */
+/* ─── VIBRATION FEEDBACK (on signal change) ─── */
 </style>
 </head>
 <body>
 
 <div class="header">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <div class="loading"><div class="spinner"></div><div class="loading-txt">Veriler yÃ¼klemiyor...</div></div>
+  <div>
+    <span class="live-dot" id="liveDot"></span>
+    <span class="logo">CFCS v4</span>
+  </div>
+  <div class="price-block">
+    <div class="price" id="price">--</div>
+    <div class="sym" id="symLabel">--</div>
+  </div>
+</div>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Coin ara... (BTC, ETH, SOL...)" oninput="searchCoin(this.value)" onfocus="searchCoin(this.value)">
+  <button onclick="searchGo()">Git</button>
+</div>
+<div class="search-results" id="searchResults"></div>
+
+<div class="sym-bar" id="symBar">
+  <button class="sym-btn" onclick="go('BTCUSDT')">BTC</button>
+  <button class="sym-btn" onclick="go('ETHUSDT')">ETH</button>
+  <button class="sym-btn" onclick="go('SOLUSDT')">SOL</button>
+  <button class="sym-btn" onclick="go('BNBUSDT')">BNB</button>
+  <button class="sym-btn" onclick="go('XRPUSDT')">XRP</button>
+  <button class="sym-btn" onclick="go('DOGEUSDT')">DOGE</button>
+  <button class="sym-btn active" onclick="go('FLOWUSDT')">FLOW</button>
+  <button class="sym-btn" onclick="go('ACXUSDT')">ACX</button>
+  <button class="sym-btn" onclick="go('SUIUSDT')">SUI</button>
+  <button class="sym-btn" onclick="go('PEPEUSDT')">PEPE</button>
+  <button class="sym-btn" onclick="go('WIFUSDT')">WIF</button>
+</div>
+
+<div id="loader">
+  <div class="loading"><div class="spinner"></div><div class="loading-txt">Veriler yükleniyor...</div></div>
 </div>
 
 <div id="app" style="display:none; padding-bottom: 20px;">
   <div class="alert-box" id="alertBox"></div>
   <div class="signal-card wait" id="signalCard">
-    <div class="signal-txt" id="signalTxt">â BEKLE</div>
+    <div class="signal-txt" id="signalTxt">❌ BEKLE</div>
     <div class="chk-row" id="chkRow"></div>
   </div>
 
-  <div class="sec-label">MTF OsilatÃ¶r</div>
+  <div class="sec-label">MTF Osilatör</div>
   <div class="rsi-grid" id="rsiGrid"></div>
 
   <div class="prob-card">
     <div class="prob-head">
-      <span class="lbl">OlasÄ±lÄ±k</span>
+      <span class="lbl">Olasılık</span>
       <span class="val" id="probVal">--</span>
     </div>
     <div class="prob-bar"><div class="prob-fill" id="probFill"></div></div>
-    <div class="prob-labels"><span>SHORT</span><span>NÃTR</span><span>LONG</span></div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  =gvæÖSÒ&¶°¢bfrâSRÇÂfrÂCR7B²³°¢b7&VBâ7B²³°¢b'âSRÇÂ7âSR7B²³°¢b÷64'VÆÂãÒ2ÇÂ÷64'VÆÂÃÒ7B²³°¢bfrâcÇÂfrÂC7B²³°¢ÆWB7F%BÒrs°¢f÷"ÆWBÒ²ÂS²²²7F%B³ÒÂ7Bò~)Rr¢~)bs°¢6öç7B7D2Ò7BãÒBòr6ffCsr¢7BãÒ2òr633cBr¢r3SSRs° ¢6WD´Òv¶ÕBrÂEBÂD2²6WD´Òv¶Õ"rÂ%BÂ$2°¢6WD´Òv¶ÔrÂeBÂd2²6WD´Òv¶ÔòrÂõBÂô2°¢VÂv¶Ô²rçFWD6öçFVçBÒ7F%C²VÂv¶Ô²rç7GÆRæ6öÆ÷"Ò7D3° ¢òò&ö&&ÆG¢6öç7B%4ÒfrÂ÷62Ò÷64'VÆÂóB£ÂföÂÒ'°¢6öç7BWÒÖFæÖÂÖFæÖâÂã3R§%4²ã3§÷62²ã3R§föÂ°¢6öç7BFâÒÒW°¢ÆWBF"ÂfÂÂ3#°¢bWâSR²F#ÒtÄôärs²fÃ×W²3#Òr33cBs²Ð¢VÇ6RbWÂCR²F#Òu4õ%Bs²fÃ×Fã²3#Òr6F33#3"s²Ð¢VÇ6R²F#Òtì9eE"s²fÃÓS²3#Òr3ccbs²Ð ¢VÂw&ö%fÂrçFWD6öçFVçBÒF"²rRr²fÂçFôfVB°¢VÂw&ö%fÂrç7GÆRæ6öÆ÷"Ò3#°¢6öç7BbÒVÂw&ö$fÆÂr°¢bç7GÆRçvGFÒW²rRs°¢bç7GÆRæ&6¶w&÷VæBÒWâSRòvÆæV"Öw&FVçBFVrÂ3FC#Â33cBr¢WÂCRòvÆæV"Öw&FVçBFVrÂ6F33#3"Â3FCr¢r3CCBs°¢bçFWD6öçFVçBÒWçFôfVB²rRs° ¢òòVçG'6væÀ¢6öç7B'6&6ærÒfrâFF²sVÒuÓòç&WbÇÂfr°¢6öç7B'6fÆÆærÒfrÂFF²sVÒuÓòç&WbÇÂfr°¢6öç7BÖöÔÂÒ'6&6ærÂÖöÕ2Ò'6fÆÆæs°¢6öç7BTÆöærÒfrâS"bb'ãÒSRbbÖöÔÂbbWâSRbb7BãÒ2bb÷64'VÆÂãÒ3°¢6öç7BU6÷'BÒfrÂCbb7ãÒSRbbÖöÕ2bbWÂCRbb7BãÒ2bb÷64'VÆÂÃÒ° ¢6öç7B62ÒVÂw6væÄ6&BrÂ7GÒVÂw6væÅGBrÂ7"ÒVÂv6µ&÷rr° ¢òò6V6¶Æ7@¢6öç7B6·2Ò°¢²Ã¢uBrÂö³¢frâSRÇÂfrÂCRÒÀ¢²Ã¢u"rÂö³¢7&VBâÒÀ¢²Ã¢trÂö³¢'ãÒSRÇÂ7ãÒSRÒÀ¢²Ã¢tÒrÂö³¢ÖöÔÂÇÂÖöÕ2ÒÀ¢²Ã¢tòrÂö³¢WâSRÇÂWÂCRÒÀ¢²Ã¢t²rÂö³¢7BãÒ2Ð¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ ¢ bÎXáÖ0µ1VSHÚÜËX\
-ÈOÜ[Û\ÜÏHØËÚÏÉÛÚÉÎÙZ[	ßHØËÚÏÉø§$ÉÎø§%ÉßIØËOÜÜ[
-KÚ[	È	ÊNÂ]]ÔÚYÛ[H	ÝØZ]	ÎÂY
-SÛÊHÂØËÛ\ÜÓ[YHH	ÜÚYÛ[XØ\ÛË\XYHÚYÛ[\[ÙIÎÂÝ^ÛÛ[H	ø§!HÓÈVTÎÂ]ÔÚYÛ[H	ÛÛÉÎÂH[ÙHY
-TÚÜ
-HÂØËÛ\ÜÓ[YHH	ÜÚYÛ[XØ\ÚÜ\XYHÚYÛ[\[ÙIÎÂÝ^ÛÛ[H	ø§!HÒÔVTÎÂ]ÔÚYÛ[H	ÜÚÜ	ÎÂH[ÙHÂØËÛ\ÜÓ[YHH	ÜÚYÛ[XØ\ØZ]	ÎÂÝ^ÛÛ[H	ø§cRÓIÎÂBËÈX]HÛÚYÛ[Ú[ÙBY
-]ÔÚYÛ[OOH]ÚYÛ[	]ÔÚYÛ[OOH	ÝØZ]	È		ÝX]IÈ[]YØ]ÜHÂ]YØ]ÜX]JÌLJNÂB]ÚYÛ[H]ÔÚYÛ[ÂB[Ý[Û[\[\
+    <div class="prob-labels"><span>SHORT</span><span>NÖTR</span><span>LONG</span></div>
+  </div>
 
-HÂÛÛÝHH[
-	Ø[\Þ	ÊNÂÛÛÝMHH]VÉÌM[I×KÌH]VÉÌÌI×KZH]VÉÌZ	×K
-H]VÉÍ	×NÂY
-YMHYÌYZY
-
-HÈKÛ\ÜÓ[YHH	Ø[\XÞ	ÎÈ]\ÈBÛÛÝÐHYMK\	YÌ\ÈËÈÛX[X\\ÚÛÛÝÓHMK\	Ì\ÈËÈÛX[[\ÚÛÛÝHZ\	
-\ÈËÈYÈ[\ÚÛÛÝHYZ\	Y
-\ÈËÈYÈX\\ÚY
-	ÐHÂKÛ\ÜÓ[YHH	Ø[\XÞ[XÚË[ÛÈÚÝÉÎÂK^ÛÛ[H	ü'å!SPÒÈ8 %[H[ÓËñ,\ØHYHÙ\H0éÙZÚ[YKMSHÓ×	ØH0í°ïÙHÚ\qgÈIÎÂH[ÙHY
-	Ó
-HÂKÛ\ÜÓ[YHH	Ø[\XÞ[XÚË\ÚÜÚÝÉÎÂK^ÛÛ[H	ü'å!SPÒÈ8 %[H[ÒÔñ,\ØHYHÝ[ÙKMSHÒÔ	ØH0í°ïÙHÚ\qgÈIÎÂH[ÙHY
-	Ó
-HÂKÛ\ÜÓ[YHH	Ø[\XÞÝÛË]\ÚÝÉÎÂK^ÛÛ[H	ü'æ 
-SH8 %ðï0éÛ0ïpïÜÙ[qgÈ[HIÎÂH[ÙHY
-	ÐHÂKÛ\ÜÓ[YHH	Ø[\XÞÝÛËYÚÝÉÎÂK^ÛÛ[H	ü'äâH
-ÒÔ8 %ðï0éÛ0ï0ï1gðï1gÈ[HIÎÂH[ÙHY
-YZ\	
-\	ÐHÂKÛ\ÜÓ[YHH	Ø[\XÞY\\ÚÝÉÎÂK^ÛÛ[H	ø¦¨;î#ÈT±,SPÒÈ8 %Rñ,\±,[1,K
-[HÓËZÚØ]IÎÂH[ÙHÂKÛ\ÜÓ[YHH	Ø[\XÞ	ÎÂBBËÈ8¥ 8¥ 8¥ [\È8¥ 8¥ 8¥ [Ý[Û[
-Y
-HÈ]\ØÝ[Y[Ù][[Y[RY
-Y
-NÈB[Ý[ÛÙ]ÓJYÊHÈÛÛÝHH[
-Y
-NÈK^ÛÛ[HÈKÝ[KÛÛÜHÎÈB[Ý[ÛÙ]Ý
-ÛË\ÙÊHÈÛÛÝHH[
-	ÜÝ]\Õ	ÊNÈKÛ\ÜÓ[YHHÛÎÈK^ÛÛ[H\ÙÎÈB[Ý[ÛÛÊÞ[JHÂÖSHHÞ[NÂ[
-	ÜÞ[SX[	ÊK^ÛÛ[HÞ[K\XÙJ	ÕTÑ	Ë	ËÕTÑ	ÊNÂØÝ[Y[]Y\TÙ[XÝÜ[
-	ËÞ[KXÊKÜXXÚ
-OÛ\ÜÓ\ÝÙÙÛJ	ØXÝ]IË^ÛÛ[OOHÞ[K\XÙJ	ÕTÑ	Ë	ÉÊJJNÂ]HHßNÈXÙHHÂ[
-	ÛØY\ÊKÝ[K\Ü^HH	ØØÚÉÎÂ[
-	Ø\	ÊKÝ[K\Ü^HH	ÛÛIÎÂÛÛXÝÔÊ
-NÂØY
+  <div class="km-card">
+    <div class="km-title">Karar Merkezi</div>
+    <div class="km-row"><span class="lbl">TREND</span><span class="val" id="kmT">--</span></div>
+    <div class="km-row"><span class="lbl">REJİM</span><span class="val" id="kmR">--</span></div>
+    <div class="km-row"><span class="lbl">HACİM</span><span class="val" id="kmH">--</span></div>
+    <div class="km-row"><span class="lbl">OSİLATÖR</span><span class="val" id="kmO">--</span></div>
+    <div class="km-row"><span class="lbl">KALİTE</span><span class="val" id="kmK">--</span></div>
+  </div>
 
-NÂBËÈ8¥ 8¥ 8¥ ÛÚ[ÙX\Ú8¥ 8¥ 8¥ ][Þ[XÛÈH×NÂ]ÙX\ÚXÝ[ÙHH[Â\Þ[È[Ý[ÛØYÞ[XÛÊ
-HÂHÂÛÛÝH]ØZ]]Ú
-	ÚÎËÙ\K[[ÙKÛÛKÙ\KÝKÙ^Ú[ÙR[ÉÊNÂY
-\ÚÊH]\ÂÛÛÝH]ØZ]ÛÛ
-NÂ[Þ[XÛÈHÞ[XÛÂ[\ÈOË][ÝP\ÜÙ]OOH	ÕTÑ	È	ËÝ]\ÈOOH	ÕQSÉÈ	ËÛÛXÝ\HOOH	ÔTUPS	ÊBX\
-ÈO
-ÈÞ[XÛËÞ[XÛ\ÙNË\ÙP\ÜÙ]JJBÛÜ
+  <div class="sec-label">Hacim Analizi</div>
+  <div class="vol-row">
+    <div class="vol-card"><div class="lbl">Alıcı</div><div class="val" id="vBuy" style="color:#00c864">--</div></div>
+    <div class="vol-card"><div class="lbl">Satıcı</div><div class="val" id="vSell" style="color:#dc3232">--</div></div>
+  </div>
 
-KHOK\ÙKØØ[PÛÛ\\J\ÙJJNÂHØ]Ú
-JHÈÛÛÛÛKÙÊ	ÔÞ[XÛØY\ÜËJNÈBB[Ý[ÛÙX\ÚÛÚ[]Y\JHÂÛX\[Y[Ý]
-ÙX\ÚXÝ[ÙJNÂÙX\ÚXÝ[ÙHHÙ][Y[Ý]
+  <div class="status">
+    <span id="statusTxt" class="live">Canlı</span> · <span id="updateTime">--</span>
+  </div>
+</div>
 
+<script>
+// ═════════════════════════════════════════════════════
+// CFCS v4 MOBILE APP — Binance Futures Real-time
+// ═════════════════════════════════════════════════════
+const API = 'https://fapi.binance.com/fapi/v1/klines';
+const TFS = [
+  { label: '15M', iv: '15m' },
+  { label: '30M', iv: '30m' },
+  { label: '1H',  iv: '1h'  },
+  { label: '4H',  iv: '4h'  }
+];
+const RSI_P = 14, SIG_P = 14;
 
-HOÔÙX\Ú
-]Y\JKML
-NÂB[Ý[ÛÔÙX\Ú
-]Y\JHÂÛÛÝÞH[
-	ÜÙX\Ú\Ý[ÉÊNÂY
-\]Y\H]Y\K[ÝJHÈÞÛ\ÜÓ[YHH	ÜÙX\Ú\\Ý[ÉÎÈ]\ÈBÛÛÝHH]Y\KÕ\\Ø\ÙJ
-K[J
-NÂÛÛÝX]Ú\ÈH[Þ[XÛË[\ÈOË\ÙKÝ\ÕÚ]
-JHËÞ[XÛÝ\ÕÚ]
-JB
-KÛXÙJL
-NÂY
-X]Ú\Ë[ÝOOH
-HÂÞ[\SH	Ï]Û\ÜÏHÙX\Ú[Ë\\Ý[ÛÛpéðï[[[XY1,OÙ]ÎÈÞÛ\ÜÓ[YHH	ÜÙX\Ú\\Ý[ÈÚÝÉÎÂ]\ÂBÞ[\SHX]Ú\ËX\
-HO]Û\ÜÏHÙX\ÚZ][HÛÛXÚÏHXÚÐÛÚ[	ÉÛKÞ[XÛIÊH]Ü[Û\ÜÏH[YHÛK\Ù_OÜÜ[Ü[Û\ÜÏHZ\ÛKÞ[XÛOÜÜ[Ù]Ü[Û\ÜÏHXÙK\ÛHTÑ\]X[ÜÜ[Ù]¤À3Ú[	ÉÊKÞÛ\ÜÓ[YHH	ÜÙX\Ú\\Ý[ÈÚÝÉÎÂB[Ý[ÛXÚÐÛÚ[Þ[JHÂ[
-	ÜÙX\Ú\Ý[ÉÊKÛ\ÜÓ[YHH	ÜÙX\Ú\\Ý[ÉÎÂ[
-	ÜÙX\Ú[]	ÊK[YHH	ÉÎÂÛÊÞ[JNÂB[Ý[ÛÙX\ÚÛÊ
-HÂÛÛÝH[
-	ÜÙX\Ú[]	ÊK[YK[J
-KÕ\\Ø\ÙJ
-NÂY
-]H]\ÂÛÛÝÞ[HH[ÛY\Ê	ÕTÑ	ÊHÈ
-È	ÕTÑ	ÎÂ[
-	ÜÙX\Ú\Ý[ÉÊKÛ\ÜÓ[YHH	ÜÙX\Ú\\Ý[ÉÎÂ[
-	ÜÙX\Ú[]	ÊK[YHH	ÉÎÂÛÊÞ[JNÂBËÈÛÜÙHÙX\ÚÛÝ]ÚYH\ØÝ[Y[Y][\Ý[\	ØÛXÚÉË
-JHOÂY
-YK\Ù]ÛÜÙ\Ý
-	ËÙX\ÚX\ÊH	YK\Ù]ÛÜÙ\Ý
-	ËÙX\Ú\\Ý[ÉÊJHÂ[
-	ÜÙX\Ú\Ý[ÉÊKÛ\ÜÓ[YHH	ÜÙX\Ú\\Ý[ÉÎÂBJNÂËÈ8¥ 8¥ 8¥ []8¥ 8¥ 8¥ [Ý[ÛÝ\
+let SYM = 'FLOWUSDT';
+let ws = null, data = {}, vol = {}, price = 0, prevPrice = 0;
+let prevSignal = 'wait';
+let timer = null;
 
-HÂ[
-	ÜÞ[SX[	ÊK^ÛÛ[HÖSK\XÙJ	ÕTÑ	Ë	ËÕTÑ	ÊNÂØYÞ[XÛÊ
-NÈËÈ0ïHÛÚ[\Ý\Ú[HpïÛH
-\[XHpéÚ[BØY
+// ─── RSI ───
+function rsi(c, p) {
+  if (c.length < p + 1) return [];
+  const r = [];
+  let g = 0, l = 0;
+  for (let i = 1; i <= p; i++) { const d = c[i] - c[i-1]; d > 0 ? g += d : l -= d; }
+  g /= p; l /= p;
+  r.push(l === 0 ? 100 : 100 - 100/(1 + g/l));
+  for (let i = p+1; i < c.length; i++) {
+    const d = c[i] - c[i-1];
+    g = (g*(p-1) + (d>0?d:0))/p;
+    l = (l*(p-1) + (d<0?-d:0))/p;
+    r.push(l === 0 ? 100 : 100 - 100/(1 + g/l));
+  }
+  return r;
+}
 
-NÂÛÛXÝÔÊ
-NÂ[Y\HÙ][\[
-ØYÌ
-NÈËÈ\ÌØ[^YYHÒHðïÙ[BBËÈYÚ\Ý\Ù\XÙHÛÜÙ\ÜÐBY
-	ÜÙ\XÙUÛÜÙ\È[]YØ]ÜHÂ]YØ]ÜÙ\XÙUÛÜÙ\YÚ\Ý\	ÜÝËÉÊKØ]Ú
+function sma(a, p) {
+  const r = [];
+  for (let i = 0; i < a.length; i++) {
+    if (i < p-1) { r.push(null); continue; }
+    let s = 0; for (let j = i-p+1; j <= i; j++) s += a[j];
+    r.push(s/p);
+  }
+  return r;
+}
 
+// ─── Fetch ───
+async function fetchK(sym, iv, n = 100) {
+  const r = await fetch(`${API}?symbol=${sym}&interval=${iv}&limit=${n}`);
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
 
-HOßJNÂBÝ\
+async function load() {
+  try {
+    const ps = TFS.map(t => fetchK(SYM, t.iv));
+    ps.push(fetchK(SYM, '5m', 20)); // volume
+    const res = await Promise.all(ps);
 
-NÂÜØÜ\ØÙOÚ[
+    for (let i = 0; i < TFS.length; i++) {
+      const cl = res[i].map(k => +k[4]);
+      const rv = rsi(cl, RSI_P);
+      const sv = sma(rv, SIG_P);
+      const last = rv[rv.length-1], prev = rv.length > 1 ? rv[rv.length-2] : last;
+      const sig = sv[sv.length-1];
+      data[TFS[i].iv] = { rsi: last, prev, sig, up: last > sig, cl: cl[cl.length-1] };
+    }
+
+    // Volume (14-bar rolling on 5m)
+    let bv = 0, sv2 = 0;
+    const k5 = res[TFS.length].slice(-14);
+    for (const k of k5) { +k[4] > +k[1] ? bv += +k[5] : sv2 += +k[5]; }
+    vol = { b: bv, s: sv2 };
+
+    if (!price) price = data['15m']?.cl || 0;
+    render();
+    el('loader').style.display = 'none';
+    el('app').style.display = 'block';
+    setSt('live', 'Canlı');
+  } catch(e) {
+    setSt('err', 'Hata: ' + e.message);
+  }
+}
+
+// ─── WebSocket ───
+function connectWS() {
+  if (ws) { ws.close(); ws = null; }
+  ws = new WebSocket(`wss://fstream.binance.com/ws/${SYM.toLowerCase()}@aggTrade`);
+  ws.onmessage = e => {
+    prevPrice = price;
+    price = +(JSON.parse(e.data).p);
+    el('price').textContent = price.toFixed(price > 100 ? 2 : price > 1 ? 4 : 6);
+    el('price').style.color = price >= prevPrice ? '#00c864' : '#dc3232';
+  };
+  ws.onerror = () => setSt('err', 'WS Hata');
+  ws.onclose = () => setTimeout(connectWS, 3000);
+}
+
+// ─── Render ───
+function render() {
+  renderRSI();
+  renderKM();
+  renderAlert();
+  el('updateTime').textContent = new Date().toLocaleTimeString('tr-TR');
+}
+
+function renderRSI() {
+  const g = el('rsiGrid');
+  g.innerHTML = '';
+  for (const t of TFS) {
+    const d = data[t.iv];
+    if (!d) continue;
+    const cls = d.up ? 'long' : 'short';
+    const dir = d.up ? 'LONG ↑' : 'SHORT ↓';
+    const pct = Math.min(100, Math.max(0, d.rsi));
+    const bc = d.up ? '#00c864' : '#dc3232';
+    const div = document.createElement('div');
+    div.className = `rsi-card ${cls}`;
+    div.innerHTML = `
+      <div class="rsi-tf">${t.label}</div>
+      <div class="rsi-dir ${cls}">${dir}</div>
+      <div class="rsi-nums">RSI: ${d.rsi.toFixed(1)} <span class="sig">Sig: ${d.sig?d.sig.toFixed(1):'--'}</span></div>
+      <div class="rsi-bar"><div class="rsi-bar-fill" style="width:${pct}%;background:${bc}"></div></div>`;
+    g.appendChild(div);
+  }
+}
+
+function renderKM() {
+  let rsiSum = 0, cnt = 0, oscBull = 0;
+  for (const t of TFS) {
+    const d = data[t.iv];
+    if (!d) continue;
+    rsiSum += d.rsi; cnt++; if (d.up) oscBull++;
+  }
+  const avg = cnt ? rsiSum/cnt : 50;
+
+  // Volume
+  const tot = vol.b + vol.s;
+  const bp = tot > 0 ? vol.b/tot*100 : 50;
+  const sp = 100 - bp;
+  el('vBuy').textContent = bp.toFixed(0) + '%';
+  el('vSell').textContent = sp.toFixed(0) + '%';
+  el('vBuy').style.color = bp > 55 ? '#00c864' : '#666';
+  el('vSell').style.color = sp > 55 ? '#dc3232' : '#666';
+
+  // Trend
+  let tT, tC;
+  if (avg > 60) { tT='GÜÇLÜ ↑'; tC='#00c864'; }
+  else if (avg > 52) { tT='↑ YÜKSELİŞ'; tC='#00a050'; }
+  else if (avg < 40) { tT='GÜÇLÜ ↓'; tC='#dc3232'; }
+  else if (avg < 48) { tT='↓ DÜŞÜŞ'; tC='#c83232'; }
+  else { tT='KARARSIZ ⟷'; tC='#666'; }
+
+  // Regime
+  const vals = TFS.map(t => data[t.iv]?.rsi || 50);
+  const spread = Math.max(...vals) - Math.min(...vals);
+  let rT, rC;
+  if (spread > 15) { rT='GÜÇLÜ TREND'; rC='#00c864'; }
+  else if (spread > 8) { rT='TREND'; rC='#00a050'; }
+  else if (spread < 5) { rT='RANGE'; rC='#666'; }
+  else { rT='GEÇİŞ'; rC='#b0b000'; }
+
+  // Osc
+  let oT, oC;
+  if (oscBull >= 3) { oT=oscBull+'/4 LONG'; oC='#00c864'; }
+  else if (oscBull <= 1) { oT=(4-oscBull)+'/4 SHORT'; oC='#dc3232'; }
+  else { oT='KARIŞIK '+oscBull+'/4'; oC='#666'; }
+
+  // Volume text
+  let vT, vC;
+  if (bp > 55) { vT='ALICI %'+bp.toFixed(0); vC='#00c864'; }
+  else if (sp > 55) { vT='SATICI %'+sp.toFixed(0); vC='#dc3232'; }
+  else { vT='DENGELİ'; vC='#666'; }
+
+  // Stars
+  let st = 0;
+  if (avg > 55 || avg < 45) st++;
+  if (spread > 8) st++;
+  if (bp > 55 || sp > 55) st++;
+  if (oscBull >= 3 || oscBull <= 1) st++;
+  if (avg > 60 || avg < 40) st++;
+  let starT = '';
+  for (let i = 0; i < 5; i++) starT += i < st ? '★' : '☆';
+  const stC = st >= 4 ? '#ffd700' : st >= 3 ? '#c8c864' : '#555';
+
+  setKM('kmT', tT, tC); setKM('kmR', rT, rC);
+  setKM('kmH', vT, vC); setKM('kmO', oT, oC);
+  el('kmK').textContent = starT; el('kmK').style.color = stC;
+
+  // Probability
+  const pRSI = avg, pOsc = oscBull/4*100, pVol = bp;
+  const pUp = Math.max(0, Math.min(100, 0.35*pRSI + 0.30*pOsc + 0.35*pVol));
+  const pDn = 100 - pUp;
+  let pDir, pVal, pC2;
+  if (pUp > 55) { pDir='LONG'; pVal=pUp; pC2='#00c864'; }
+  else if (pUp < 45) { pDir='SHORT'; pVal=pDn; pC2='#dc3232'; }
+  else { pDir='NÖTR'; pVal=50; pC2='#666'; }
+
+  el('probVal').textContent = pDir + ' %' + pVal.toFixed(0);
+  el('probVal').style.color = pC2;
+  const pf = el('probFill');
+  pf.style.width = pUp + '%';
+  pf.style.background = pUp > 55 ? 'linear-gradient(90deg,#004d28,#00c864)' : pUp < 45 ? 'linear-gradient(90deg,#dc3232,#4d1111)' : '#444';
+  pf.textContent = pUp.toFixed(0) + '%';
+
+  // Entry signal
+  const rsiRising = avg > (data['15m']?.prev || avg);
+  const rsiFalling = avg < (data['15m']?.prev || avg);
+  const momL = rsiRising, momS = rsiFalling;
+  const eLong = avg > 52 && bp >= 55 && momL && pUp > 55 && st >= 3 && oscBull >= 3;
+  const eShort = avg < 48 && sp >= 55 && momS && pUp < 45 && st >= 3 && oscBull <= 1;
+
+  const sc = el('signalCard'), stx = el('signalTxt'), cr = el('chkRow');
+
+  // Checklist
+  const chks = [
+    { l:'T', ok: avg > 55 || avg < 45 },
+    { l:'R', ok: spread > 8 },
+    { l:'H', ok: bp >= 55 || sp >= 55 },
+    { l:'M', ok: momL || momS },
+    { l:'O', ok: pUp > 55 || pUp < 45 },
+    { l:'K', ok: st >= 3 }
+  ];
+  cr.innerHTML = chks.map(c => `<span class="${c.ok?'ok':'fail'}">${c.ok?'✓':'✗'}${c.l}</span>`).join(' ');
+
+  let newSignal = 'wait';
+  if (eLong) {
+    sc.className = 'signal-card long-ready signal-pulse';
+    stx.textContent = '✅ LONG HAZIR';
+    newSignal = 'long';
+  } else if (eShort) {
+    sc.className = 'signal-card short-ready signal-pulse';
+    stx.textContent = '✅ SHORT HAZIR';
+    newSignal = 'short';
+  } else {
+    sc.className = 'signal-card wait';
+    stx.textContent = '❌ BEKLE';
+  }
+
+  if (newSignal !== prevSignal && (eLong || eShort)) {
+    if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
+  }
+  prevSignal = newSignal;
+}
+
+function renderAlert() {
+  const box = el('alertBox');
+  const avg = Object.values(data).reduce((s, d) => s + d.rsi, 0) / Object.keys(data).length;
+  const thr = 70; // pullback threshold above 70
+  
+  if (avg > thr) {
+    const pb = avg - (data['15m']?.prev || avg);
+    if (pb > -3 && pb < 0 && avg > thr) {
+      box.className = 'alert-box show pullback-long';
+      box.textContent = 'Uzun pozisyon için geri çekilme. DCA fırsatı!';
+    } else if (pb < 3 && pb > 0) {
+      box.className = 'alert-box show strong-up';
+      box.textContent = 'Yukarı ivme güçleniyor!';
+    }
+  } else if (avg < 30) {
+    const pb = (data['15m']?.prev || avg) - avg;
+    if (pb > -3 && pb < 0) {
+      box.className = 'alert-box show pullback-short';
+      box.textContent = 'Kısa pozisyon için geri çekilme. DCA fırsatı!';
+    } else if (pb < 3 && pb > 0) {
+      box.className = 'alert-box show strong-dn';
+      box.textContent = 'Aşağı ivme güçleniyor!';
+    }
+  } else {
+    box.className = 'alert-box';
+  }
+}
+
+// ─── Helpers ───
+const el = id => document.getElementById(id);
+const setSt = (id, txt) => { const e = el('status' + id.charAt(0).toUpperCase() + id.slice(1)); if(e) e.textContent = txt; };
+const setKM = (id, t, c) => { el(id).textContent = t; el(id).style.color = c; };
+
+function go(s) {
+  if (SYM === s) return;
+  SYM = s;
+  document.querySelectorAll('.sym-btn').forEach(b => b.classList.toggle('active', b.onclick.toString().includes(s)));
+  connectWS();
+  load();
+  el('searchInput').value = '';
+  el('searchResults').classList.remove('show');
+}
+
+const coins = [
+  { n: 'Bitcoin', p: 'BTCUSDT' },
+  { n: 'Ethereum', p: 'ETHUSDT' },
+  { n: 'Solana', p: 'SOLUSDT' },
+  { n: 'BNB', p: 'BNBUSDT' },
+  { n: 'XRP', p: 'XRPUSDT' },
+  { n: 'Dogecoin', p: 'DOGEUSDT' },
+  { n: 'Flow', p: 'FLOWUSDT' },
+  { n: 'Acx', p: 'ACXUSDT' },
+  { n: 'Sui', p: 'SUIUSDT' },
+  { n: 'Pepe', p: 'PEPEUSDT' },
+  { n: 'Wif', p: 'WIFUSDT' }
+];
+
+function searchCoin(q) {
+  const sr = el('searchResults');
+  if (!q) { sr.classList.remove('show'); return; }
+  const f = coins.filter(c => c.n.toLowerCase().includes(q.toLowerCase()) || c.p.toLowerCase().includes(q.toLowerCase()));
+  sr.innerHTML = f.length ? f.map(c => `<div class="search-item" onclick="go('${c.p}')"<div><span class="name">${c.n}</span><span class="pair">${c.p}</span></div><span class="price-sm" id="p${c.p}">--</span></div>`).join('') : '<div class="search-no-result">Coin bulunamadı</div>';
+  sr.classList.toggle('show', f.length > 0);
+}
+
+function searchGo() {
+  const i = el('searchInput');
+  const c = coins.find(x => x.p === i.value.toUpperCase() || x.n.toLowerCase() === i.value.toLowerCase());
+  if (c) go(c.p);
+}
+
+// ─── Init ───
+window.addEventListener('load', () => { load(); connectWS(); });
+
+// Live update via WebSocket (separate for price)
+setInterval(() => { if (document.hidden) return; load(); }, 15000);
+</script>
+</body>
+</html>
