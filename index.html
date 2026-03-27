@@ -71,7 +71,6 @@ html, body {
 .search-bar button {
   background: linear-gradient(135deg, #00b4d8, #0077b6);
   color: #fff; border: none; padding: 8px 14px; border-radius: 10px;
-  font-size: 12px; font-weight: 700; cursor:8px 14px; border-radius: 10px;
   font-size: 12px; font-weight: 700; cursor: pointer;
 }
 .search-bar button:active { transform: scale(0.93); }
@@ -123,567 +122,5 @@ html, body {
 .signal-card.wait .signal-txt { color: #555; }
 .signal-card.entry-now-long .signal-txt { color: #00ff64; }
 .signal-card.entry-now-short .signal-txt { color: #ff3232; }
-.chk-row { margin-top: 6px; font-size: 12px; color: #888; font-weight: 500; letter-spacing: 0.5px; }
-.chk-row .ok { color: #00c864; }
-.chk-row .fail { color: #dc3232; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
-.signal-pulse { animation: pulse 1.5s ease-in-out infinite; }
-@keyframes entryFlash { 0%,100%{opacity:1} 50%{opacity:0.7} }
-.entry-flash { animation: entryFlash 0.8s ease-in-out infinite; }
 
-/* âââ PULLBACK TRACKER âââ */
-.pb-card {
-  margin: 6px 10px; padding: 10px 12px; border-radius: 12px;
-  background: #12121a; border: 1px solid #1e1e2a;
-  display: none;
-}
-.pb-card.show { display: block; }
-.pb-card.pb-long { border-left: 3px solid #00b4d8; }
-.pb-card.pb-short { border-left: 3px solid #ffa500; }
-.pb-card.pb-entry-long { border-left: 3px solid #00ff64; border-color: rgba(0,255,100,0.3); background: rgba(0,255,100,0.05); }
-.pb-card.pb-entry-short { border-left: 3px solid #ff3232; border-color: rgba(255,50,50,0.3); background: rgba(255,50,50,0.05); }
-.pb-title { font-size: 10px; color: #555; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-.pb-phases { display: flex; gap: 4px; margin-bottom: 8px; }
-.pb-phase { flex: 1; height: 4px; border-radius: 2px; background: #1a1a2a; }
-.pb-phase.done { background: #00b4d8; }
-.pb-phase.active { background: #00e5ff; animation: pulse 1s infinite; }
-.pb-phase.entry { background: #00ff64; animation: entryFlash 0.6s infinite; }
-.pb-rows { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
-.pb-row { display: flex; justify-content: space-between; padding: 3px 0; }
-.pb-row .lbl { font-size: 10px; color: #555; }
-.pb-row .val { font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
-.pb-msg { margin-top: 6px; padding: 6px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; text-align: center; }
-.pb-msg.wait-pb { background: rgba(0,180,216,0.1); color: #00b4d8; }
-.pb-msg.tracking { background: rgba(255,165,0,0.1); color: #ffa500; }
-.pb-msg.entry { background: rgba(0,255,100,0.15); color: #00ff64; font-size: 13px; }
-.pb-msg.invalid { background: rgba(255,50,50,0.1); color: #dc3232; }
-
-/* âââ RSI GRID âââ */
-.sec-label { padding: 8px 12px 4px; font-size: 10px; color: #444; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
-.rsi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 4px 10px; }
-.rsi-card {
-  background: #12121a; border-radius: 12px; padding: 10px;
-  border: 1px solid #1e1e2a; transition: border-color 0.3s;
-}
-.rsi-card.long { border-left: 3px solid #00c864; }
-.rsi-card.short { border-left: 3px solid #dc3232; }
-.rsi-tf { font-size: 10px; color: #555; font-weight: 700; }
-.rsi-dir { font-size: 16px; font-weight: 800; margin: 2px 0; }
-.rsi-dir.long { color: #00c864; }
-.rsi-dir.short { color: #dc3232; }
-.rsi-nums { font-size: 12px; color: #aaa; }
-.rsi-nums .sig { color: #666; font-size: 11px; }
-.rsi-bar { height: 3px; background: #1a1a2a; border-radius: 2px; margin-top: 6px; overflow: hidden; }
-.rsi-bar-fill { height: 100%; border-radius: 2px; transition: width 0.5s; }
-
-/* âââ PROBABILITY âââ */
-.prob-card {
-  margin: 6px 10px; background: #12121a; border-radius: 12px;
-  padding: 10px; border: 1px solid #1e1e2a;
-}
-.prob-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
-.prob-head .lbl { font-size: 10px; color: #555; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-.prob-head .val { font-size: 16px; font-weight: 800; }
-.prob-bar { height: 20px; background: #1a1a2a; border-radius: 10px; overflow: hidden; position: relative; }
-.prob-fill { height: 100%; border-radius: 10px; transition: all 0.5s; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; }
-.prob-labels { display: flex; justify-content: space-between; font-size: 9px; color: #444; margin-top: 3px; }
-
-/* âââ KARAR MERKEZÄ° âââ */
-.km-card {
-  margin: 6px 10px; background: #12121a; border-radius: 12px;
-  border: 1px solid #1e1e2a; overflow: hidden;
-}
-.km-title { padding: 8px; text-align: center; font-size: 11px; font-weight: 700; color: #00e5ff; letter-spacing: 2px; border-bottom: 1px solid #1a1a2a; text-transform: uppercase; }
-.km-row { display: flex; justify-content: space-between; padding: 7px 10px; border-bottom: 1px solid #0e0e16; align-items: center; }
-.km-row:last-child { border-bottom: none; }
-.km-row .lbl { font-size: 11px; color: #555; font-weight: 600; }
-.km-row .val { font-size: 12px; font-weight: 700; }
-
-/* âââ VOLUME âââ */
-.vol-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 4px 10px; }
-.vol-card { background: #12121a; border-radius: 10px; padding: 8px; text-align: center; border: 1px solid #1e1e2a; }
-.vol-card .lbl { font-size: 9px; color: #555; font-weight: 700; text-transform: uppercase; }
-.vol-card .val { font-size: 18px; font-weight: 800; margin-top: 2px; }
-
-/* âââ STATUS âââ */
-.status { padding: 8px; text-align: center; font-size: 9px; color: #333; }
-.status .live { color: #00c864; }
-.status .err { color: #dc3232; }
-
-/* âââ LOADING âââ */
-.loading { text-align: center; padding: 60px 20px; }
-.spinner { width: 28px; height: 28px; border: 3px solid #1a1a2a; border-top-color: #00e5ff; border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 12px; }
-@keyframes spin { to { transform: rotate(360deg); } }
-.loading-txt { color: #444; font-size: 12px; }
-</style>
-</head>
-<body>
-
-<div class="header">
-  <div>
-    <span class="live-dot" id="liveDot"></span>
-    <span class="logo">CFCS v4</span>
-  </div>
-  <div class="price-block">
-    <div class="price" id="price">--</div>
-    <div class="sym" id="symLabel">--</div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<div class="km-row"><span class="lbl">REJÄ°M</span><span class="val" id="kmR">--</span></div>
-    <div class="km-row"><span class="lbl">HACÄ°M</span><span class="val" id="kmH">--</span></div>
-    <div class="km-row"><span class="lbl">OSÄ°LATÃR</span><span class="val" id="kmO">--</span></div>
-    <div class="km-row"><span class="lbl">KALÄ°TE</span><span class="val" id="kmK">--</span></div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   pb.pbCount++;
-        // Titresim!
-        if ('vibrate' in navigator) navigator.vibrate([100, 50, 100, 50, 300]);
-        renderPB();
-        renderEntrySignal();
-      }
-    }
-  }
-
-  if (pb.dir === 'short') {
-    // SHORT: Dip takibi
-    if (p < pb.peakPrice || pb.peakPrice === 0) pb.peakPrice = p;
-
-    if (pb.phase === 'signal_new' || pb.phase === 'waiting_pb') {
-      const risePct = (p - pb.peakPrice) / pb.peakPrice * 100;
-      if (risePct >= PB_MIN) {
-        pb.phase = 'pb_active';
-        pb.pbExtreme = p;
-        pb.pbDepthPct = risePct;
-      }
-    }
-
-    if (pb.phase === 'pb_active') {
-      if (p > pb.pbExtreme) pb.pbExtreme = p;
-      pb.pbDepthPct = (pb.pbExtreme - pb.peakPrice) / pb.peakPrice * 100;
-
-      if (pb.pbDepthPct > PB_MAX) {
-        pb.phase = 'cooldown';
-        pb.entryTime = Date.now();
-        renderPB();
-        return;
-      }
-
-      const bounceFromHigh = (pb.pbExtreme - p) / pb.pbExtreme * 100;
-      const ticksFalling = pb.priceHistory.length >= 3 &&
-        pb.priceHistory[pb.priceHistory.length-1] < pb.priceHistory[pb.priceHistory.length-2] &&
-        pb.priceHistory[pb.priceHistory.length-2] < pb.priceHistory[pb.priceHistory.length-3];
-      const rsiTurning = pb.rsi5m < pb.rsi5mHigh - PB_RSI_BOUNCE;
-
-      if (bounceFromHigh > 0.05 && ticksFalling && pb.pbDepthPct >= PB_IDEAL_MIN) {
-        pb.phase = 'entry_ready';
-        pb.entryPrice = p;
-        pb.entryTriggered = true;
-        pb.entryTime = Date.now();
-        pb.pbCount++;
-        if ('vibrate' in navigator) navigator.vibrate([100, 50, 100, 50, 300]);
-        renderPB();
-        renderEntrySignal();
-      }
-    }
-  }
-}
-
-function checkPullbackSignal(signal) {
-  const now = Date.now();
-  if (pb.phase === 'cooldown' && (now - pb.entryTime) > COOLDOWN_MS) {
-    resetPB();
-  }
-  if (signal === 'wait') {//Reset when signal calcels
-    if (pb.phase !== 'idle') resetPB();
-    return;
-  }
-  if (signal === 'long') {
-    if (pb.dir !== 'long' || pb.phase === 'idle') {
-      resetPB();
-      pb.phase = 'signal_new';
-      pb.dir = 'long';
-      pb.signalPrice = price;
-      pb.peakPrice = price;
-      pb.signalTime = now;
-      pb.rsi5mLow = pb.rsi5m;
-      setTimeout(() => { //If pullback doesn't start within 3s, set wait state
-        if (pb.phase === 'signal_new') pb.phase = 'waiting_pb';
-      }, 3000);
-    }
-    if (pb.rsi5m < pb.rsi5mLow) pb.rsi5mLow = pb.rsi5m;
-  }
-  if (signal === 'short') {
-    if (pb.dir !== 'short' || pb.phase === 'idle') {
-      resetPB();
-      pb.phase = 'signal_new';
-      pb.dir = 'short';
-      pb.signalPrice = price;
-      pb.peakPrice = price;
-      pb.signalTime = now;
-      pb.rsi5mHigh = pb.rsi5m;
-      setTimeout(() => { //If pullback doesn't start within 3s, set wait state
-        if (pb.phase === 'signal_new') pb.phase = 'waiting_pb';
-      }, 3000);
-    }
-    if (pb.rsi5m > pb.rsi5mHigh) pb.rsi5mHigh = pb.rsi5m;
-  }
-}
-
-function updateSignal() {
-  if (!data['5m']) return;
-  const { sig } = data['5m'];
-  prevSignal = data['5m'].sig > data['5m'].prevK
-    ? 'long'
-    : data['5m'].sig < data['5m'].prev
-    ? 'short'
-    : 'wait';
-  checkPullbackSignal(prevSignal);
-}
- 3000);
-    }
-    if (pb.rsi5m > pb.rsi5mHigh) pb.rsi5mHigh = pb.rsi5m;
-  }
-
-  // entry_ready sonrasi 30sn gecmisse cooldown'a al
-  if (pb.phase === 'entry_ready' && (now - pb.entryTime) > 30000) {
-    pb.phase = 'cooldown';
-    pb.entryTime = now;
-  }
-}
-
-function renderPB() {
-  const card = el('pbCard');
-  const title = el('pbTitle');
-  const msg = el('pbMsg');
-  const phases = ['ph1','ph2','ph3','ph4'];
-
-  if (pb.phase === 'idle') {
-    card.className = 'pb-card';
-    return;
-  }
-
-  const dirLabel = pb.dir === 'long' ? 'LONG' : 'SHORT';
-  const fmt = (v) => v > 100 ? v.toFixed(2) : v > 1 ? v.toFixed(4) : v.toFixed(6);
-
-  // Show card
-  let cardClass = 'pb-card show';
-  if (pb.phase === 'entry_ready') {
-    cardClass += pb.dir === 'long' ? ' pb-entry-long' : ' pb-entry-short';
-  } else {
-    cardClass += pb.dir === 'long' ? ' pb-long' : ' pb-short';
-  }
-  card.className = cardClass;
-
-  title.textContent = 'Pullback Takip â ' + dirLabel;
-
-  // Values
-  el('pbSigPrice').textContent = fmt(pb.signalPrice);
-  el('pbSigPrice').style.color = pb.dir === 'long' ? '#00c864' : '#dc3232';
-  el('pbPeak').textContent = fmt(pb.peakPrice);
-  el('pbPeak').style.color = '#aaa';
-  el('pbDepth').textContent = pb.pbDepthPct > 0 ? '%' + pb.pbDepthPct.toFixed(2) : '--';
-  el('pbDepth').style.color = pb.pbDepthPct > 1.0 ? '#ffa500' : pb.pbDepthPct > 0.5 ? '#00b4d8' : '#aaa';
-  el('pbRsi5').textContent = pb.rsi5m ? pb.rsi5m.toFixed(1) : '--';
-  el('pbRsi5').style.color = pb.rsi5m > 55 ? '#00c864' : pb.rsi5m < 45 ? '#dc3232' : '#aaa';
-
-  // Phase indicators
-  const phaseMap = {
-    'signal_new': 1, 'waiting_pb': 1, 'pb_active': 2, 'entry_ready': 4, 'cooldown': 0
-  };
-  const activePhase = phaseMap[pb.phase] || 0;
-  for (let i = 0; i < 4; i++) {
-    const phEl = el(phases[i]);
-    if (pb.phase === 'entry_ready') {
-      phEl.className = 'pb-phase entry';
-    } else if (i < activePhase) {
-      phEl.className = 'pb-phase done';
-    } else if (i === activePhase) {
-      phEl.className = 'pb-phase active';
-    } else {
-      phEl.className = 'pb-phase';
-    }
-  }
-
-  // Message
-  if (pb.phase === 'signal_new' || pb.phase === 'waiting_pb') {
-    msg.className = 'pb-msg wait-pb';
-    msg.textContent = 'Pullback bekleniyor... Hemen girme!';
-  } else if (pb.phase === 'pb_active') {
-    msg.className = 'pb-msg tracking';
-    const ideal = pb.pbDepthPct >= PB_IDEAL_MIN;
-    msg.textContent = ideal
-      ? 'Pullback aktif (%' + pb.pbDepthPct.toFixed(2) + ') â DÃ¶nÃ¼Å bekleniyor...'
-      : 'Pullback baÅladÄ± (%' + pb.pbDepthPct.toFixed(2) + ') â HenÃ¼z sÄ±Ä...';
-  } else if (pb.phase === 'entry_ready') {
-    msg.className = 'pb-msg entry';
-    msg.textContent = 'ð¯ ÅÄ°MDÄ° GÄ°R! â PB: %' + pb.pbDepthPct.toFixed(2) + ' â Fiyat: ' + fmt(pb.entryPrice);
-  } else if (pb.phase === 'cooldown') {
-    if (pb.pbDepthPct > PB_MAX) {
-      msg.className = 'pb-msg invalid';
-      msg.textContent = 'â Pullback Ã§ok derin (%' + pb.pbDepthPct.toFixed(2) + ') â Sinyal zayÄ±fladÄ±!';
-    } else {
-      msg.className = 'pb-msg wait-pb';
-      msg.textContent = 'Bekleme sÃ¼resi... Yeni pullback arauÄ±yor.';
-    }
-  }
-}
-
-function renderEntrySignal() {
-  const card = el('signalCard');
-  const txt = el('signalTxt');
-  const chk = el('chkRow');
-
-  let state = pb.entryTriggered ? 'ENSZ[ÃÄSDDñexNd="1 /AmÃ·|INãw|" : Bekle...';
-  card.className = `signal-card ${pb.entryTriggered ? 'entry-now-' + pb.dir : 'wait'}`;
-  txt.textContent = state;
-  chk.innerHTML = pb.entryTriggered ? 'â£ ENTRY RYK| +â§ â': '';
-}
-
-function renderKBay() {
-  const wrap = el('rsiGrid');
-  wrap.innerHTML = '';
-  for (const tf of TFS) {
-    if (!data[tf.iv]) continue;
-    const str = data[tf.iv], card = document.createElement('div');
-    card.className = `rsi-card ${str.up ? 'long' : 'short'}`;
-    card.innerHTML = `<div class="rsi-tf">${tf.label}</div><div class="rsi-dir ${str.up ? 'long' : 'short'}">${str.rsi.toFixed(1)}</div><div class="rsi-nums"><span>KSI ${tf.label}</span><span class="sig">DTOG ${str.sig.toFixed(1)}</span></div>`;
-    wrap.appendChild(card);
-  }
-  Re»
-}
-
-lY]Â[Ý[Û[\ØX[]J
-HÂÛÛÝØ\H[
-	ÜØØ\	ÊNÂY
-Y]VÉÍ[I×JH]\ÂÛÛÝÈÚHHH]VÉÍ[I×NÂÛÛÝØ[HÚH
-ÌÈLÚH
-ÈX]Ý[
-ÚH
-JHÂ[
-	ÜØ[	ÊK^ÛÛ[HØ[
-È	ÉIÎÂ[
-	ÜØ[	ÊKÝ[KÚYHØ[
-È	ÉIÎÂÛÛÝÛÛÜÈHÉÜØJ
-L
-LÊIË	ÜØJMKMKÊIË	ÜØJNMÊIË	ÜØJLÊI×NÂÛÛÝÚYHX]ÛÜØ[ÈJNÂ[
-	ÜØ[	ÊKÝ[KXÚÙÜÝ[HÛÛÜÖØÚYÈÈÈÚYNÂØ\Û\ÜÓ[YHHØ[H
-LÈ	ÜØXØ\ÚÝÉÈ	ÜØXØ\	ÎÂB[Ý[Û[\ÒPØ\Ê
-HÂÛÛÝÜ\H[
-	ÜÚQÜY	ÊNÂÜ\[\SH	ÉÎÂÜ
-ÛÛÝÙÊHÂY
-Y]VÝ]JHÛÛ[YNÂÛÛÝÈÚKÚYË\HH]VÝ]NÂÛÛÝØ\HØÝ[Y[ÜX]Q[[Y[
-	Ù]ÊNÂØ\Û\ÜÓ[YHHÚKXØ\	Ý\È	ÛÛÉÈ	ÜÚÜ	ßXÂØ\[\SH]Û\ÜÏHÚK]ÝX[OÙ]]Û\ÜÏHÚKY\	Ý\È	ÛÛÉÈ	ÜÚÜ	ßHÜÚKÑ^Y
-J_OÙ]]Û\ÜÏHÚK[[\ÈÜ[ÝX[OÜÜ[Ü[Û\ÜÏHÚYÈÑÈ	ÜÚYËÑ^Y
-J_OÜÜ[Ù]ÂÜ\\[Ú[
-Ø\
-NÂBB[Ý[Û[\Û[YJ
-HÂÛÛÝ^HH[
-	Ý^IÊKÙ[H[
-	ÝÙ[	ÊNÂY
-]Û	]ÛÊH]\ÂÛÛÝÝ[HÛ
-ÈÛÎÂ^K^ÛÛ[H
-	ÉÊH
-È
-ÛÈÝ[
-L
-KÑ^Y
-
-NÂÙ[^ÛÛ[H
-	ÉÊH
-È
-ÛÈÈÝ[
-L
-KÑ^Y
-
-NÂB[Ý[Û[\ÓJ
-HÂÛÛÝ\HÉÕRIË	ÔRÉË	ÒPÒIË	ÓËÐÐIË	ÒÐS
+True);
