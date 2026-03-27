@@ -353,7 +353,7 @@ const PB_MIN = 0.15;     // minimum pullback % (cok kucuk hareketi filtrele)
 const PB_IDEAL_MIN = 0.25; // ideal pullback baslangici
 const PB_MAX = 1.5;      // maksimum pullback % (bundan fazlasi sinyal iptal)
 const PB_RSI_BOUNCE = 2;  // RSI'nin dipten kac puan yukselmesi gerekiyor
-const COOLDOWN_MS = 60000; // entry sonrasi 60sn bekleme
+const COOLDOWN_MS = 30000; // entry sonrasi 30sn bekleme (eskiden 60sn)
 
 function resetPB() {
   pb.phase = 'idle';
@@ -487,9 +487,51 @@ function connectWS() {
 // PULLBACK GİRİŞ SİSTEMİ
 // ═══════════════════════════════════════════════════
 
+function revertSignalCard() {
+  // Entry_ready bittikten sonra sinyal kartini "PB Bekle" ye döndür
+  const sc = el('signalCard'), stx = el('signalTxt');
+  if (prevSignal === 'long') {
+    sc.className = 'signal-card long-ready signal-pulse';
+    stx.textContent = 'LONG SİNYAL — PB Bekle';
+  } else if (prevSignal === 'short') {
+    sc.className = 'signal-card short-ready signal-pulse';
+    stx.textContent = 'SHORT SİNYAL — PB Bekle';
+  }
+}
+
 function updatePullbackPrice(p) {
-  // Her fiyat tick'inde pullback durumunu guncelle
-  if (pb.phase === 'idle' || pb.phase === 'cooldown') return;
+  const now = Date.now();
+
+  // entry_ready → cooldown (30 saniye sonra, her tick'te kontrol)
+  if (pb.phase === 'entry_ready' && (now - pb.entryTime) > 30000) {
+    pb.phase = 'cooldown';
+    pb.entryTime = now;
+    revertSignalCard();
+    renderPB();
+  }
+
+  // cooldown → yeni sinyal arama (COOLDOWN_MS sonra, her tick'te kontrol)
+  if (pb.phase === 'cooldown') {
+    if ((now - pb.entryTime) > COOLDOWN_MS) {
+      resetPB();
+      // Sinyal hala aktifse yeni pullback aramaya basla
+      if (prevSignal === 'long' || prevSignal === 'short') {
+        pb.phase = 'signal_new';
+        pb.dir = prevSignal;
+        pb.signalPrice = p;
+        pb.peakPrice = p;
+        pb.signalTime = now;
+        if (pb.dir === 'long') pb.rsi5mLow = pb.rsi5m || 50;
+        else pb.rsi5mHigh = pb.rsi5m || 50;
+        setTimeout(() => { if (pb.phase === 'signal_new') pb.phase = 'waiting_pb'; }, 3000);
+        revertSignalCard();
+      }
+      renderPB();
+    }
+    return;
+  }
+
+  if (pb.phase === 'idle') return;
 
   // Fiyat geçmişini tut (son 10 tick)
   pb.priceHistory.push(p);
